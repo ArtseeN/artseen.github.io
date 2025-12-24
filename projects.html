@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim | ArtseeN</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <nav>
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">ART<span
+                    class="highlight">.</span></a></div>
+        <ul class="nav-links">
+            <li><a href="projects.html" class="active" data-i18n="nav_about">Hakkımda</a></li>
+            <li><a href="#" id="lang-toggle" class="lang-btn">TR | EN</a></li>
+            <li><a href="https://github.com/artseen" target="_blank"><i class="ri-github-fill"
+                        style="font-size: 1.2rem;"></i></a></li>
+            <li><a href="https://discord.gg/stg" target="_blank"><i class="ri-discord-fill"
+                        style="font-size: 1.2rem;"></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- About Me Section -->
+        <section id="about-me" style="text-align: center; margin-bottom: 40px; padding-top: 50px;">
+            <h2 class="section-title" data-i18n="about_title">Hakkımda</h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6; font-size: 1.1rem;"
+                data-i18n="about_text">
+                Adım <strong>Alper</strong>, 2019'dan beri yazılım ile uğraşıyorum, Aktif olarak <a href="https://discord.gg/stg" target="_blank"
+                    style="color: #5865F2; text-decoration: none; font-weight: bold;">STG</a> üzerinde Geliştirici
+                olarak
+                takılıyorum.
+            </p>
+        </section>
+
+        <section id="projects" style="padding-top: 50px;">
+            <h2 class="section-title" data-i18n="projects_title">Projelerim</h2>
+            <div class="projects-grid">
+                <!-- ArtseeN FiveM Project -->
+                <div class="project-card" onclick="window.open('https://github.com/ArtseeN/artseenfivem2', '_blank')"
+                    style="cursor: pointer;">
+                    <div class="project-info">
+                        <h3 data-i18n="proj_artseen_title">ArtseeN FiveM</h3>
+                        <p data-i18n="proj_artseen_desc">Boş zamanlarımda hobi amaçlı geliştirdiğim, eğlenceli ve
+                            işlevsel açık kaynaklı FiveM
+                            scriptleri.</p>
+                        <div class="project-techs">
+                            <span>BACKEND</span><span>FiveM</span><span>Open Source</span>
+                        </div>
+                    </div>
+                </div>
+                 <!-- STG-MULTICHARACTER Project -->
+                   <div class="project-card" onclick="window.open('https://media.discordapp.net/attachments/1449528412916940915/1449528732388692141/asaca.png?ex=694d1214&is=694bc094&hm=53e9d5f5a7691df3d770e3a871b246158c2f3856ca53099a794a122b0830fcd5&=&format=webp&quality=lossless&width=1601&height=904', '_blank')"
+                    style="cursor: pointer;">
+                    <div class="project-info">
+                        <h3 data-i18n="proj_stgmulti_title">STG Multi Character</h3>
+                        <p data-i18n="proj_stgmulti_desc">FiveM için yapılmış Modern arayüzlü ve kullanıcı dostu çoklu karakter oluşturma ve seçme ekranı.</p>
+                        <div class="project-techs">
+                            <span>HTML</span><span>CSS</span><span>JS</span><span>BACKEND</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- AnimeVerse Project -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3 data-i18n="proj_animeverse_title">AnimeVerse</h3>
+                        <p data-i18n="proj_animeverse_desc">Kendi zevkime göre tasarladığım, modern arayüzlü ve
+                            kullanıcı dostu bir anime izleme
+                            platformu.</p>
+                        <div class="project-techs">
+                            <span>HTML</span><span>CSS</span><span>TSX</span><span>NEXT.JS</span><span>REACT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3 data-i18n="proj_portfolio_title">Kişisel Portföy</h3>
+                        <p data-i18n="proj_portfolio_desc">Minimalist ve modern tasarıma sahip, Discord API entegreli
+                            kişisel tanıtım sitesi.</p>
+                        <div class="project-techs">
+                            <span>HTML</span><span>CSS</span><span>JS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;" data-i18n="contributions_title">Katkıda Bulunduklarım
+            </h2>
+            <div class="projects-grid">
+                <!-- URPV Contribution -->
+                <div class="project-card" onclick="window.open('https://discord.gg/urp', '_blank')"
+                    style="cursor: pointer;">
+                    <div class="project-info">
+                        <h3 data-i18n="contrib_urpv_title">URPV</h3>
+                        <p data-i18n="contrib_urpv_desc">FiveM sunucusu için gelişmiş sistem geliştirme, altyapı
+                            optimizasyonu ve oyun modlarının
+                            entegrasyonu.</p>
+                        <div class="project-techs">
+                            <span>BACKEND</span><span>FiveM</span><span>Optimization</span><span>System Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HawksRP Contribution -->
+                <div class="project-card" onclick="window.open('https://discord.gg/ZzgEnymBmG', '_blank')"
+                    style="cursor: pointer;">
+                    <div class="project-info">
+                        <h3 data-i18n="contrib_hawksrp_title">HawksRP</h3>
+                        <p data-i18n="contrib_hawksrp_desc">FiveM sunucusu için gelişmiş sistem geliştirme, altyapı
+                            optimizasyonu ve oyun modlarının
+                            entegrasyonu.</p>
+                        <div class="project-techs">
+                            <span>BACKEND</span><span>FiveM</span><span>Optimization</span><span>System Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ATY Clothing Contribution -->
+                <div class="project-card" onclick="window.open('https://atiysu.tebex.io/package/7169426', '_blank')"
+                    style="cursor: pointer;">
+                    <div class="project-info">
+                        <h3 data-i18n="contrib_aty_title">ATY Clothing</h3>
+                        <p data-i18n="contrib_aty_desc">Giyim mağazası sistemi için backend altyapısının
+                            kurulması, veritabanı bağlantısı.</p>
+                        <div class="project-techs">
+                            <span>BACKEND</span><span>DATABASE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footer_rights">&copy; 2024 Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            if (link.getAttribute('href') === 'projects.html') {
+                link.style.color = 'var(--text-main)';
+            }
+        });
+    </script>
+</body>
+
+
+</html>

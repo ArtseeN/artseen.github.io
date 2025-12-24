@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sürpriz?</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(-45deg, #ffffff, #f0f2f5, #e6e9ef, #ffffff);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #333333;
+            font-family: 'Inter', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+            color: #111;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .back-btn {
+            margin-top: 30px;
+            text-decoration: none;
+            color: #999;
+            font-size: 0.9rem;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s;
+            padding-bottom: 2px;
+        }
+
+        .back-btn:hover {
+            color: #333;
+            border-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon">👻</div>
+        <h1 id="title">Hediye veya herhangi bir şey yok.</h1>
+        <p id="subtitle">Sadece boşluk ve sen.</p>
+        <a href="index.html" class="back-btn" id="backBtn">Geri dön</a>
+    </div>
+
+    <!--
+───▄█▌─▄─▄─▐█▄
+───██▌▀▀▄▀▀▐██
+───██▌─▄▄▄─▐██
+───▀██▌▐█▌▐██▀
+▄██████─▀─██████▄
+https://www.youtube.com/shorts/nJmzgf9ygb8
+    -->
+
+    <script>
+        console.log(`
+───▄█▌─▄─▄─▐█▄
+───██▌▀▀▄▀▀▐██
+───██▌─▄▄▄─▐██
+───▀██▌▐█▌▐██▀
+▄██████─▀─██████▄
+https://www.youtube.com/shorts/nJmzgf9ygb8
+        `);
+
+
+        const translations = {
+            tr: {
+                title: "Hediye veya herhangi bir şey yok.",
+                subtitle: "Sadece boşluk ve sen.",
+                back: "Geri dön"
+            },
+            en: {
+                title: "No gift or anything here.",
+                subtitle: "Just emptiness and you.",
+                back: "Go back"
+            }
+        };
+
+        const currentLang = localStorage.getItem('siteLang') || 'tr';
+        const langData = translations[currentLang];
+
+        if (langData) {
+            document.getElementById('title').textContent = langData.title;
+            document.getElementById('subtitle').textContent = langData.subtitle;
+            document.getElementById('backBtn').textContent = langData.back;
+        }
+    </script>
+</body>
+
+</html>
