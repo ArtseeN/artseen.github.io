@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+     
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ BEN⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣤⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⠿⠿⠿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣶⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀SEN⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⡟⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⣾⣿⣶⣶⣤⡀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠘⢿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀
+⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠈⠻⣿⣿⣿⣿⣆⠀⠀⠀⢀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀ 
+⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⣀⣤⣶⣶⣌⠻⣿⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⠁⣰⣿⣿⣿⣿⣿⣦⣙⢿⣿⣿⣿⠄⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⣿⣦⣹⣟⣫⣼⣿⣿⣶⣿⣿⣿⣿⣿⣿⣯⡉⠉⠉⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠐⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿⡆⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⡇⠀⢻⣿⣿⣿⣿⣿⡇⠀⠀⠈⠉⠉⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠉⠀⠀⠀⠀⠀⠀⠀
+⠀⣠⣴⣶⣶⣶⣶⣶⣶⣾⣿⣿⣿⣿⣿⡇⠀⠸⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠹⢿⣿⣿⢿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀
+⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢰⣶⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣧⣄⣐⣀⣀⣀⣀⣀⡀
+⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀  ⠉⠉⠙⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠁⠛⠛⠛⠛⠛⠛⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠁
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// size ufak bir hediye, kodu da istediğin gibi kullanabilirsin bu arada.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtseeN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://static.vecteezy.com/system/resources/previews/026/773/200/non_2x/skull-with-ai-generated-free-png.png">
+</head>
+
+<body>
+
+    <div class="crt-overlay"></div>
+
+    <div class="steam-app">
+        <div class="toolbar">
+            <div class="toolbar-left">
+                <div class="app-menu">Valve</div>
+                <div class="app-menu">View</div>
+                <div class="app-menu">Friends</div>
+                <div class="app-menu">Games</div>
+                <div class="app-menu">Help</div>
+            </div>
+            <div class="toolbar-right">
+                <div class="win-btn minimize">_</div>
+                <div class="win-btn maximize">□</div>
+                <div class="win-btn close">X</div>
+            </div>
+        </div>
+
+        <div class="steam-content">
+
+            <div class="profile-panel">
+                <div class="profile-card">
+                    <div class="avatar-container">
+                        <div class="avatar-frame-large offline" id="avatarFrame">
+                            <img src="https://media.tenor.com/images/fe80292723e7f457f865320576359df3/tenor.gif"
+                                class="profile-img" id="displayAvatar">
+                        </div>
+                    </div>
+
+                    <h1 class="pro-username" id="displayUsername">Loading...</h1>
+
+                    <div class="profile-links">
+                        <a href="https://discord.gg/leainfo" target="_blank" class="profile-link">
+                            <img
+                                src="https://static.vecteezy.com/system/resources/previews/014/018/581/non_2x/discord-logo-on-transparent-background-free-vector.jpg">
+                            discord.gg/leainfo
+                        </a>
+                        <a href="https://discord.gg/stg" target="_blank" class="profile-link">
+                            <img
+                                src="https://static.vecteezy.com/system/resources/previews/014/018/581/non_2x/discord-logo-on-transparent-background-free-vector.jpg">
+                            discord.gg/stg
+                        </a>
+                        <a href="https://github.com/artseen" target="_blank" class="profile-link">
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
+                            github.com/artseen
+                        </a>
+                    </div>
+
+                    <div class="steam-id-tag" id="displayTag">...</div>
+
+                    <div class="status-box">
+                        <div class="current-status" id="displayStatus">Connecting...</div>
+                    </div>
+
+                    <div class="mini-activity-box" id="miniActivityBox" style="display:none;">
+                        <img id="mabIcon" src="" class="mab-icon">
+                        <div class="mab-info">
+                            <div class="mab-name" id="mabName">Game Name</div>
+                            <div class="mab-details" id="mabDetails">Details</div>
+                            <div class="mab-time" id="mabTime">00:00 elapsed</div>
+                        </div>
+                    </div>
+
+                    <div class="bio-box" id="displayBio">...</div>
+
+                    <div class="profile-meta">
+                        <div class="meta-row">
+                            <span class="meta-label">Profile Views:</span>
+                            <span class="meta-val" id="viewCount">0</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label">Member Since:</span>
+                            <span class="meta-val" id="displayJoinDate">...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-module" id="musicModule">
+                    <div class="mm-header">
+                        <span id="musicHeader">Music Inactive</span>
+                    </div>
+                    <div class="mm-content">
+                        <div class="mm-art-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
+                                id="musicArt" class="mm-art">
+                        </div>
+                        <div class="mm-info">
+                            <div class="mm-track scrolling-text" id="songNameDisplay">Not Playing</div>
+                            <div class="mm-artist" id="artistNameDisplay"></div>
+                        </div>
+                    </div>
+                    <div class="mm-vol-bar">
+                        <div class="mm-vol-fill" id="musicProgress"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-panel">
+                <div class="steam-tabs">
+                    <button class="steam-tab active" data-tab="projects">Projects</button>
+                </div>
+
+                <div class="tab-container">
+
+                    <div id="projects" class="tab-content active">
+                        <div class="inner-header">My Projects</div>
+                        <div class="projects-list-container" id="projectsList">
+                        </div>
+
+                        <div class="inner-header" style="margin-top: 20px;">Contributions</div>
+                        <div class="projects-list-container" id="contributionsList">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-statusbar">
+            <div class="bs-item">Steam Connection: Secure</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
