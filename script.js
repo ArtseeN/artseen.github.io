@@ -23,6 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 url: "https://www.youtube.com/watch?v=WR8kA969AA0"
             },
             {
+                title: "STG Used Vehicle Shop",
+                desc: "Modern multi-character selection screen for FiveM servers.",
+                tech: ["HTML", "CSS", "JS", "Lua"],
+                url: "https://www.youtube.com/watch?v=juFMHQ_aFHg"
+            },
+            {
                 title: "STG Driving School",
                 desc: "Modern multi-character selection screen for FiveM servers.",
                 tech: ["HTML", "CSS", "JS", "Lua"],
