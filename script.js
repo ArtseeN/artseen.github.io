@@ -5,34 +5,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
         steamID: "STEAM_0:1:607823243",
         joinDate: "September 14, 2019",
-        bio: `"Welcome to the source engine."<br>Don't forget to reload.`,
+        bio: `Benim dostlarım var, nedense korumalarımız yok.`,
 
         backgroundUrl: "",
 
         projects: [
-            {
-                title: "ArtseeN FiveM",
-                desc: "Fun and functional open source FiveM scripts developed as a hobby.",
-                tech: ["Lua", "FiveM", "Open Source"],
-                url: "https://github.com/ArtseeN/artseenfivem2"
+             {
+                title: "STG Guess Who",
+                desc: "Head Board Party Game with Live Image Search [ESX/QBCore/QBOX]",
+                tech: ["HTML", "CSS", "JS", "Lua"],
+                url: "https://stgscripts.com/fivem-scripts/guess-who"
             },
             {
-                title: "STG Multicharacter",
-                desc: "Modern multi-character selection screen for FiveM servers.",
+                title: "STG Multi-character",
+                desc: "Modern multi-character selection screen for FiveM servers [ESX/QBCore/QBOX].",
                 tech: ["HTML", "CSS", "JS", "Lua"],
-                url: "https://www.youtube.com/watch?v=WR8kA969AA0"
-            },
-            {
-                title: "STG Used Vehicle Shop",
-                desc: "Modern multi-character selection screen for FiveM servers.",
-                tech: ["HTML", "CSS", "JS", "Lua"],
-                url: "https://www.youtube.com/watch?v=juFMHQ_aFHg"
+                url: "https://stgscripts.com/fivem-scripts/multicharacter"
             },
             {
                 title: "STG Driving School",
-                desc: "Modern multi-character selection screen for FiveM servers.",
+                desc: "Car, Bike, Truck, Boat, Plane, Helicopter [ESX/QBCore/QBOX]",
                 tech: ["HTML", "CSS", "JS", "Lua"],
-                url: "https://www.youtube.com/watch?v=YSda1gYG3zc"
+                url: "https://stgscripts.com/fivem-scripts/driving-school"
+            },
+            {
+                title: "STG Used Vehicle Shop",
+                desc: "Player Vehicle Marketplace [ESX/QBCore/QBOX]",
+                tech: ["HTML", "CSS", "JS", "Lua"],
+                url: "https://stgscripts.com/fivem-scripts/used-vehicle-shop"
             },
             {
                 title: "AnimeVerse",
@@ -45,7 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 desc: "Minimalist personal site with Discord API integration.",
                 tech: ["HTML", "CSS", "JS"],
                 url: "#"
-            }
+            },
+            {
+                title: "ArtseeN FiveM",
+                desc: "Fun and functional open source FiveM scripts developed as a hobby.",
+                tech: ["Lua", "FiveM", "Open Source"],
+                url: "https://github.com/ArtseeN/artseenfivem2"
+            },
         ],
 
         contributions: [
