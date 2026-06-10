@@ -11,6 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         projects: [
              {
+                title: "STG Tower Blocks",
+                desc: "Multiplayer Stacking Tower Party Game with Real Physics [ESX/QBCore/QBOX]",
+                tech: ["HTML", "CSS", "JS", "Lua"],
+                url: "https://stgscripts.com/fivem-scripts/tower-blocks"
+            },
+             {
                 title: "STG Guess Who",
                 desc: "Head Board Party Game with Live Image Search [ESX/QBCore/QBOX]",
                 tech: ["HTML", "CSS", "JS", "Lua"],
@@ -74,12 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 url: "https://atiysu.tebex.io/package/7169426"
             }
         ],
-
-        recentGames: [
-            { name: "Visual Studio Code", time: "42.5 saat son iki hafta", img: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" },
-            { name: "Counter-Strike 2", time: "18.2 saat son iki hafta", img: "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" },
-            { name: "Grand Theft Auto V", time: "4.5 saat son iki hafta", img: "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" }
-        ]
     };
 
     const APP_IMAGES = {
